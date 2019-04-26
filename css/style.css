@@ -184,6 +184,11 @@ html {
   letter-spacing: 10px;
   margin-bottom: 15px;
 }
+@media (max-width: 567px) {
+  .resume-wrap .about .name {
+    letter-spacing: normal;
+  }
+}
 .resume-wrap .about .position {
   display: block;
   font-size: 9px;
@@ -269,6 +274,11 @@ html {
   border: 1px solid #39383a;
   position: relative;
 }
+@media (max-width: 567px) {
+  .resume-wrap .experience .skills-list_item .level {
+    width: 50%;
+  }
+}
 .resume-wrap .experience .skills-list_item .level:before {
   content: "";
   position: absolute;
@@ -285,6 +295,80 @@ html {
 }
 .resume-wrap .experience .skills-list_item .level-75:before {
   width: 75%;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    width: 70%;
+  }
+  .container .profile-photo {
+    height: 430px;
+  }
+  .container .profile-info .lines {
+    display: none;
+  }
+  .container .resume-wrap .experience .list-item__title {
+    font-size: 16px;
+  }
+  .container .resume-wrap .experience .list-item__date {
+    font-size: 12px;
+  }
+  .container .resume-wrap .experience .list-item__text {
+    font-size: 14px;
+  }
+  .container .resume-wrap .experience .skills-list .skills-list_item {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+  .container .profile-photo {
+    background-position: center center;
+  }
+
+  .resume-wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .resume-wrap .experience .list-item__title {
+    font-size: 16px;
+  }
+  .resume-wrap .experience .list-item__date {
+    font-size: 12px;
+  }
+  .resume-wrap .experience .list-item__text {
+    font-size: 14px;
+  }
+  .resume-wrap .experience li .skills-list_item {
+    font-size: 14px;
+  }
+}
+@media (max-width: 567px) {
+  .container {
+    min-width: 320px;
+    margin-top: 0;
+  }
+  .container .profile-photo {
+    height: 300px;
+  }
+
+  .resume-wrap {
+    padding: 20px 15px;
+  }
+  .resume-wrap .logo-img {
+    display: none;
+  }
+  .resume-wrap .logo-lines {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

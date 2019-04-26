@@ -223,6 +223,10 @@ html {
 				text-transform: uppercase;
 				letter-spacing: 10px;
 				margin-bottom: 15px;
+				@media (max-width:567px) {
+					letter-spacing: normal;
+					
+				}
 				
 			}
 			
@@ -315,7 +319,7 @@ html {
 			}
 			
 			.skills {
-			
+				
 				&-list {
 					list-style: none;
 					padding-left: 0;
@@ -333,6 +337,11 @@ html {
 							height: 8px;
 							border: 1px solid #39383a;
 							position: relative;
+							
+							@media (max-width: 567px) {
+								width: 50%;
+							}
+							
 							&:before {
 								content: '';
 								position: absolute;
@@ -342,14 +351,17 @@ html {
 								background-color: #898989;
 							}
 							
-						
+							
 						}
+						
 						.level-35:before {
 							width: 35%;
 						}
+						
 						.level-90:before {
 							width: 90%;
 						}
+						
 						.level-75:before {
 							width: 75%;
 						}
@@ -363,5 +375,113 @@ html {
 	
 }
 
+@media (max-width: 1024px) {
+	.container {
+		width: 90%;
+	}
+}
 
+@media (max-width: 992px) {
+	.container {
+		flex-direction: column;
+		width: 70%;
+		
+		.profile {
+			&-photo {
+				height: 430px;
+				
+			}
+			
+			&-info {
+				
+				.lines {
+					display: none;
+				}
+			}
+		}
+		.resume-wrap {
+			.experience {
+				.list-item {
+					&__title {
+						font-size: 16px;
+					}
+					&__date {
+						font-size: 12px;
+					}
+					&__text {
+						font-size: 14px;
+					}
+				}
+				.skills-list .skills-list_item {
+					font-size: 14px;
+				}
+			}
+		}
+		
+		}
+	
+	
+}
+
+@media (max-width: 768px) {
+	.container {
+		width: 80%;
+		.profile {
+			&-photo {
+				background-position: center center;
+			}
+		}
+	}
+	.resume-wrap {
+		padding-left: 20px;
+		padding-right: 20px;
+		.experience {
+			.list-item {
+				&__title {
+					font-size: 16px;
+				}
+				&__date {
+					font-size: 12px;
+				}
+				&__text {
+					font-size: 14px;
+				}
+			}
+			li .skills-list_item {
+				font-size: 14px;
+			}
+		}
+	}
+	
+}
+
+@media (max-width: 567px) {
+	.container {
+		min-width: 320px;
+		margin-top: 0;
+		.profile {
+			&-photo {
+				height: 300px;
+			}
+		}
+		
+	}
+	.resume-wrap {
+		padding: 20px 15px;
+		
+		
+		
+		.logo {
+			&-img {
+				display: none;
+				
+			}
+			
+			&-lines {
+				display: none;
+			}
+		}
+		
+	}
+}
 
